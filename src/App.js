@@ -37,7 +37,7 @@ function App() {
 
         </Routes>
       </Router>
-      <ProjectIcon />
+      {/* <ProjectIcon /> */}
       </div>
       
       <Footer />
