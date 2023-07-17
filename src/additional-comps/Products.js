@@ -13,7 +13,9 @@ const productDataBase = [
 {
     name: "First Light",
     description: "The AI-based tool that helps you communicate your ideas more effectively than ever before.",
-    caseStudy: []
+    caseStudy: [
+        
+    ]
 }
 // ,
 // {

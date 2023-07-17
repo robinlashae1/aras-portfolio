@@ -3,6 +3,7 @@ function NavModal(){
     // ACCOUNTED
 return(
     <div id="navModal">
+        <button> X </button>
         <div>
             <a href="/Projects">
                 <h1>

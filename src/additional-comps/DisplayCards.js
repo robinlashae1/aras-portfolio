@@ -3,16 +3,17 @@ function DisplayCards({place, product}){
     if (place === "home"){
             return(
             <div>
-                <h1> {product.Name}</h1>
-                <div> 
+                <div>
+                   <h1> {product.name}</h1>
                     <p>{product.description}</p>
-                    <img background gradient/>
-                    </div>
                     {/* Auth? add boolean with edit button */}
-                <a href="/">
-                    <button> Read Case Study</button>
-                </a>
+                    <a href="/">
+                        <button> Read Case Study</button>
+                    </a> 
+                </div>
+                <img src="https://static.thenounproject.com/png/1269202-200.png" />
             </div>
+            
             )
             }
     else if(place === "About"){
