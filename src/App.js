@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import productDataBase from "./additional-comps/Products.js"
 import './App.css';
 import { BrowserRouter as 
         Router, Switch,
@@ -33,7 +34,7 @@ function App() {
 
           <Route path="/contact" element={<Contact />} />
 
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home products={productDataBase}/>} />
 
         </Routes>
       </Router>

@@ -1,4 +1,5 @@
 function ProjectIcon(){
+    // ACCOUNTED
     return(
        
         <div id="projectsIcon">
