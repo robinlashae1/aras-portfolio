@@ -2,7 +2,7 @@ function DisplayCards({place, product}){
 // ACCOUNTED
     if (place === "home"){
             return(
-            <div>
+            <div className="border">
                 <div>
                    <h1> {product.name}</h1>
                     <p>{product.description}</p>
@@ -13,7 +13,6 @@ function DisplayCards({place, product}){
                 </div>
                 <img src="https://static.thenounproject.com/png/1269202-200.png" />
             </div>
-            
             )
             }
     else if(place === "About"){
@@ -27,6 +26,12 @@ function DisplayCards({place, product}){
                 </div>
             </div>
         )
-        }  
+        } 
+        else {
+            return(
+                <>
+                </>
+            )
+        }
     };
     export default DisplayCards;

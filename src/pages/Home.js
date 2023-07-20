@@ -2,27 +2,45 @@
 import DisplayCards from "../additional-comps/DisplayCards";
 function Home({products}){
 	// ACCOUNTED
+	console.log(products)
     return(
-        <div id="home-container">
+        <div className="flex-column">
 			<nav/>
-			<section>
-				<h1> 
-				ARA FRITZ <br/>
-				UX / UI DESIGNER
-				</h1>
-				<p>
-				Making a positive impact on my community through collaboration, empathy and funky tunes.
-				</p>
-				<p> my recent work</p>
-				<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
-			</section>
-			<section>
-				{DisplayCards("home",products[-1])}
-				{DisplayCards("home",products[-2])}
-				{DisplayCards("home",products[-3])}
-			</section>
-			
 
+			<section className="border">
+				<div>
+					<h1 className="border"> 
+					ARA FRITZ <br/>
+					UX / UI DESIGNER
+					</h1>
+					<p className="border">
+					Making a positive impact on my community <br/>
+					through collaboration, empathy and funky tunes.
+					</p>
+				</div>
+				
+				<div className="border">
+					<p > my recent work</p>
+					<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+				</div>
+			</section>
+
+			<section className="border flex-column">
+				{products.map((product) => { return(
+					<div className="homeDisplay border flex-row">
+					<div>
+					   <h1> {product.name}</h1>
+						<p>{product.description}</p>
+						{/* Auth? add boolean with edit button */}
+						<a href="/">
+							<button> Read Case Study</button>
+						</a> 
+					</div>
+					<img src="https://static.thenounproject.com/png/1269202-200.png" />
+				</div>
+				)
+				})}
+			</section>
 			
         </div>
         
@@ -30,3 +48,4 @@ function Home({products}){
 }
 ;
 export default Home;
+// (DisplayCards("home",product))

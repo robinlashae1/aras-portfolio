@@ -1,9 +1,9 @@
 function About (){
   // ACCOUNTED
     return(
-        <div id="about-container">
-          <section>
-            <div>
+        <div id="about-container" >
+          <section className="flex-row">
+            <div id="about-main-text">
               <h1> Hi there!</h1>
               <p> 
                 My name is Ara Fritz. I’m a nonbinary multi-cultural UX/UI designer from Philadelphia. I thrive in creative enenvironments 
@@ -12,7 +12,7 @@ function About (){
                 recorecording studio with my friends singing and writing music for my new album :)
               </p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png"/>
+            <img id="about-image" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png"/>
             <div>
                 <p> oh wait, there's more</p>
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>

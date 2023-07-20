@@ -15,6 +15,7 @@ import Contact from './pages/Contact';
 import Header from './additional-comps/Header';
 import Footer from './additional-comps/Footer';
 import ProjectIcon from './additional-comps/ProjectIcon';
+import NavModal from './additional-comps/NavModal';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/:projectName" element={<Project />} />
 
           <Route path="/resume" element={<Resume />} />
+          <Route path="/NavModal" element={<NavModal/>} />
 
           <Route path="/contact" element={<Contact />} />
 

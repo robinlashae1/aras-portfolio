@@ -1,16 +1,16 @@
-import ProjectIcon from "ProjectIcon.js"
+import ProjectIcon from "./ProjectIcon.js"
 function NavModal(){
     // ACCOUNTED
 return(
-    <div id="navModal">
-        <button> X </button>
-        <div>
+    <div id="" className="flex-row">
+        
+        <div className="flex-column">
             <a href="/Projects">
                 <h1>
                     Projects
                 </h1>
             </a>
-            <a href="/AboutMe">
+            <a href="/about">
                 <h1>
                     About Me
                 </h1>
@@ -20,6 +20,7 @@ return(
                     Connect
                 </h1>
             </a>
+            <button> X </button>
         </div>
         <div>
             <ProjectIcon />

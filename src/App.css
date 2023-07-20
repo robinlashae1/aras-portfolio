@@ -3,6 +3,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: bisque;
+  justify-content: center;
 }
  html, body {
   height: 100%;
@@ -15,13 +17,16 @@
   display: flex;
   flex-direction: row;
 }
+.border{
+  border: solid 2px;
+  border-color: black;
+}
 
 .flex-column{
   display: flex;
   flex-direction: column;
 }
 #routes-container{
-  background-color: bisque;
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -29,6 +34,21 @@
 #Project-icon {
   height: 40vmin;
   pointer-events: none;
+}
+
+#nav-modal{
+  display: flex;
+}
+
+#about-main-text{
+  width: 60%;
+}
+
+#about-image{
+  width: 40%;
+}
+#about-container section:first-of-type{
+flex-wrap: wrap;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -60,9 +80,6 @@
 
 }
 
-#home-photo{
-  width: 25vw;
-}
 
 
 /* About */
@@ -81,26 +98,16 @@
   padding: 2%;
   height: 7vh;
   justify-content: space-between;
-  background-color: aliceblue;
 }
-#nav-buttons-container{
-  display: flex;
-  justify-content: space-around;
-  width: 45%;
+
+.homeDisplay{
+justify-content: space-around;
 }
-.nav-buttons{
-background-color: bisque;
+
+.homeDisplay div{
+  width: 60%;
 }
-.nav-buttons:nth-child(4){
-justify-self: flex-start;
-background-color: blue;
-}
-#nav-logo{
-  width: 5vw;
-}
-.about-info-container:nth-child(even){
-  flex-flow: row-reverse;
-}
+
 /* Project Icon */
 svg{
   height: 20vh;
@@ -134,16 +141,19 @@ svg{
 
 /* Footer */
 #footer{
-  background-color: aqua;
   padding: 0 2vw;
   margin-top: auto;
   height: min-content;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
-#footer-text-container{
+#footer div{
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-around ;
+  width: 50%;
   align-items: center;
-
 }
 
 /* Contact */
