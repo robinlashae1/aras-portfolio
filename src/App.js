@@ -7,14 +7,11 @@ import { BrowserRouter as
         Routes
 } from "react-router-dom";
 import About from './pages/About';
-import AllProjects from './pages/AllProjects';
 import Home from './pages/Home';
 import Project from './pages/Project';
 import Resume from './pages/Resume';
-import Contact from './pages/Contact';
 import Header from './additional-comps/Header';
 import Footer from './additional-comps/Footer';
-import ProjectIcon from './additional-comps/ProjectIcon';
 import NavModal from './additional-comps/NavModal';
 
 function App() {
@@ -27,14 +24,8 @@ function App() {
         <Routes>
           <Route path="about" element={<About />} />
             
-          <Route path="/projects" element={<AllProjects/>} />
-
           <Route path="/:projectName" element={<Project />} />
-
-          <Route path="/resume" element={<Resume />} />
           <Route path="/NavModal" element={<NavModal/>} />
-
-          <Route path="/contact" element={<Contact />} />
 
           <Route path="/" element={<Home products={productDataBase}/>} />
 

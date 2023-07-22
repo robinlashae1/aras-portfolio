@@ -5,7 +5,7 @@ return(
     <div id="" className="flex-row">
         
         <div className="flex-column">
-            <a href="/Projects">
+            <a href="link/html-link.html#projects">
                 <h1>
                     Projects
                 </h1>
@@ -15,7 +15,7 @@ return(
                     About Me
                 </h1>
             </a>
-            <a href="/Connect">
+            <a href="#footer">
                 <h1>
                     Connect
                 </h1>

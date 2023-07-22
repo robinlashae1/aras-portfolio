@@ -25,19 +25,9 @@ function Home({products}){
 				</div>
 			</section>
 
-			<section className="border flex-column">
+			<section className="border flex-column" id="projects">
 				{products.map((product) => { return(
-					<div className="homeDisplay border flex-row">
-					<div>
-					   <h1> {product.name}</h1>
-						<p>{product.description}</p>
-						{/* Auth? add boolean with edit button */}
-						<a href="/">
-							<button> Read Case Study</button>
-						</a> 
-					</div>
-					<img src="https://static.thenounproject.com/png/1269202-200.png" />
-				</div>
+					<DisplayCards place="home" product={product} />
 				)
 				})}
 			</section>

@@ -1,4 +1,6 @@
+import { useParams } from "react-router-dom";
 function Project(){
+    const {project} =useParams()    
     return(
         <div>
             <div>

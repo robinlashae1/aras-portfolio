@@ -7,7 +7,7 @@ function DisplayCards({place, product}){
                    <h1> {product.name}</h1>
                     <p>{product.description}</p>
                     {/* Auth? add boolean with edit button */}
-                    <a href="/">
+                    <a href={`/${product.name}`}>
                         <button> Read Case Study</button>
                     </a> 
                 </div>
