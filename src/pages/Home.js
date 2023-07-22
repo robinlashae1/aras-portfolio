@@ -1,8 +1,10 @@
 
 import DisplayCards from "../additional-comps/DisplayCards";
-function Home({products}){
+
+function Home({projects}){
+	console.log(projects)
+
 	// ACCOUNTED
-	console.log(products)
     return(
         <div className="flex-column">
 			<nav/>
@@ -26,8 +28,8 @@ function Home({products}){
 			</section>
 
 			<section className="border flex-column" id="projects">
-				{products.map((product) => { return(
-					<DisplayCards place="home" product={product} />
+				{projects.map((project) => { return(
+					<DisplayCards place="home" project={project} />
 				)
 				})}
 			</section>

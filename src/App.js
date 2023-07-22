@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import productDataBase from "./additional-comps/Products.js"
+import projectsDataBase from "./additional-comps/ProjectsDB.js"
 import './App.css';
 import { BrowserRouter as 
         Router, Switch,
@@ -27,7 +27,7 @@ function App() {
           <Route path="/:projectName" element={<Project />} />
           <Route path="/NavModal" element={<NavModal/>} />
 
-          <Route path="/" element={<Home products={productDataBase}/>} />
+          <Route path="/" element={<Home projects={projectsDataBase}/>} />
 
         </Routes>
       </Router>
