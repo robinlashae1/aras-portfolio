@@ -1,11 +1,17 @@
+import Ours from "../img/Ours.png";
+import hayden from "../img/hayden.png";
+import haydenProjectView from "../img/haydenProjectView.png";
+import firstLight from "../img/firstLight.png";
+
 const projectsDataBase = [
 {
     id: 1,
     name: "Ours",
     tagline: "User Research/ UX Design/ UI Design",
     description: "A menstrual cycle app that promotes inclusivity , embracing individuals from all backgrounds who wish to monitor their health, hygiene, and overall well-being.",
-    backgroundImage: [],
-    productImage: [],
+    background: "C8DC52",
+    projectImage: Ours,
+    mainImage:Ours,
     caseStudy: []
 },
 {
@@ -13,8 +19,9 @@ const projectsDataBase = [
     name: "Haydn",
     tagline: "User Research/ UX Design/ UI Design",
     description: "The AI-based tool that helps you communicate your ideas more effectively than ever before.",
-    background: "C8DC52",
-    productImage: [],
+    background: "FDF151",
+    projectImage: haydenProjectView,
+    mainImage: hayden,
     caseStudy: []
 },
 {
@@ -22,32 +29,10 @@ const projectsDataBase = [
     name: "First Light",
     tagline: "User Research/ UX Design/ UI Design",
     description: "The AI-based tool that helps you communicate your ideas more effectively than ever before.",
-    backgroundImage: [],
-    productImage: [],
-    caseStudy: [
-    ]
-}
-// ,
-// {
-//     name: "",
-//     description: "",
-//     backgroundPhoto: img,
-//     productPhoto: img,
-//     caseStudy: []
-// },
-// {
-//     name: "",
-//     description: "",
-//     backgroundPhoto: img,
-//     productPhoto: img,
-//     caseStudy: []
-// },
-// {
-//     name: "",
-//     description: "",
-//     backgroundPhoto: img,
-//     productPhoto: img,
-//     caseStudy: []
-//}
+    background: "",
+    projectImage: firstLight,
+    mainImage:firstLight,
+    caseStudy: []
+    }
 ];
 export default projectsDataBase;
