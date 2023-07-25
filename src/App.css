@@ -141,12 +141,19 @@ svg{
 
 /* Footer */
 #footer{
-  padding: 0 2vw;
+  padding-bottom: 3vh;
   margin-top: auto;
   height: min-content;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   align-items: center;
+  height: 20vh;
+  align-content: center;
+  font-size: larger;
+}
+#footer h4{
+  font-size: xx-large;
+  text-decoration: underline;
 }
 #footer div{
   display: flex;
@@ -220,4 +227,64 @@ align-items: center;
 
 #navMenuButton{
   height: 70%;
+}
+
+.home-display-card{
+  width: 100%;
+  justify-content: space-evenly;
+  height: 40vh;
+}
+.home-display-card:first-of-type{
+  margin-top: 5vh;
+}
+.home-display-card div h1{
+  font-size: 45px;
+}
+.home-display-card div p{
+  margin: -3vh 0 3vh;
+  font-size: 20px;
+}
+.home-display-card div{
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  align-items: center;
+}
+.home-display-card div:first-of-type{
+  text-align: left;
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+.home-display-background{
+    height: 25vh !important;
+    border-radius: 50%;
+    transform: rotate(345deg);
+    filter: blur(8px);
+    text-align: unset !important;
+    position:absolute;
+    z-index:1;
+    height: 15vh;
+    right: 0;
+    width: 45% !important;
+    margin-right: 2vw ;
+}
+.project-main-image{
+  height: 30vh;
+  fill: none !important;
+  position:relative;
+  z-index:5;
+}
+
+.home-display-card div button{
+  background-color: #4caf4f00; /* Green */
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
 }

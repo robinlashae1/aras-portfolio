@@ -29,7 +29,7 @@ const projectsDataBase = [
     name: "First Light",
     tagline: "User Research/ UX Design/ UI Design",
     description: "The AI-based tool that helps you communicate your ideas more effectively than ever before.",
-    background: "",
+    background: "F2BE45",
     projectImage: firstLight,
     mainImage:firstLight,
     caseStudy: []

@@ -31,7 +31,7 @@ function Home({projects}){
 				</div>
 			</section>
 
-			<section className="border flex-column home-sections" id="projects">
+			<section className="flex-column home-sections" id="projects">
 				{projects.map((project) => { return(
 					<DisplayCards place="home" project={project} />
 				)

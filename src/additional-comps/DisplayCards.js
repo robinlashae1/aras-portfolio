@@ -4,17 +4,24 @@ function DisplayCards({place, project}){
     const navigate = useNavigate();
 
 // ACCOUNTED
+
+const background = project.background;
+console.log(background)
     if (place === "home"){
             return(
-            <div className="border">
-                <div>
+            <div className="home-display-card flex-row">
+                <div className="flex-column">
                    <h1> {project.name}</h1>
                     <p>{project.description}</p>
                     {/* Auth? add boolean with edit button */}
                    
-                        <button onClick={() => navigate(`/${project.name}`, {state: {project}})}> Read Case Study</button>
-                </div>
-                <img src="https://static.thenounproject.com/png/1269202-200.png" />
+                    <button onClick={() => navigate(`/${project.name}`, {state: {project}})}> Read Case Study</button>
+                </div> 
+                <div>
+                <img className="project-main-image" src={project.mainImage} />
+                 <div className="home-display-background" style={{background: `#${background}`}}/>
+                </div>    
+               
             </div>
             )
             }

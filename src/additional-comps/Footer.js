@@ -3,7 +3,7 @@ function Footer(){
     return(
     <div id="footer" className="border">
         <h4> Let's Connect</h4>
-        <div className="border">
+        <div >
            <a>LinkedIn</a>
         <a>Email</a>
         <a>Resume</a> 
