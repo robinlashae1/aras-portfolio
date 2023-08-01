@@ -6,96 +6,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <title>Document</title>
 </head>
-<body>
 
+<body >
   <div id="navbar">
     <a href="./index.html">
-      <img src="images/A.png" alt="thick black rounded A" id="logo">
+      <img src="images/A.png" alt="thick black rounded A" id="logo" class="nav-elements img-fluid">
     </a>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+     <svg id="menuButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list nav-elements" viewBox="0 0 16 16" >
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-    </svg>
+    </svg> 
+    
+    <div id="nav-modal" class="modal collapse">
+          <div class="modal-body">
+            <a>
+              <h1>Projects</h1>
+            </a>
+            <a>
+              <h1>About Me</h1>
+            </a>
+            <a>
+              <h1>
+                Connect
+              </h1>
+            </a>
+          </div>
+    </div><!-- /.modal -->
   </div>
 
-  <header id="home-page">
-    <div>
-      <div id="home-spotlight">
+  <div id="home-page" class="flex-column center" >
+    <div class="flex-column center" id="home">
+      <div class="flex-column center" id="home-spotlight">
         <h1> ARA FRITZ <br/>
           UX/UI DESIGNER
         </h1>
         <p>
-          Making a positive impact on my community through collaboration, empathy and funky tunes.
+          Making a positive impact on my community
+           through collaboration, empathy and funky tunes.
         </p>
       </div>
-      <div id="home-check-out">
-        <img src="images/checkOutMyRecentWork 1.png" alt="check out my recent work" />
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+
+      <div id="home-check-out" class="flex-column center">
+        <img src="images/checkOutMyRecentWork 1.png" alt="check out my recent work" class="img-fluid"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 18 18">
           <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
         </svg>
+      </div> 
+
+    </div>
+
+  <div class="flex-column center" id="home-project-column">
+
+    <div class="flex-row home-card home-bottom-column" >
+      <div class="flex-column home-card-text">
+        <h4 class="card-title text-left">Ours</h4>
+        <p class="card-text text-left">
+        A menstrual cycle app that promotes inclusivity , embracing individuals from all backgrounds who wish to monitor their health, hygiene, and overall well-being.
+        </p>
+        <a href="./ours.html" >
+          <button class="home-button"> Read Case Study</button>
+        </a>
+      </div>
+              
+      <div class="card-image center" id="ours-home">
+        <img src="./images/Ours.png" />
       </div>
     </div>
-    <div>
-      <div class="home-display-cards">
-        <div>
-           <h3>
-         Ours
-          </h3>
-          <p>
-            A menstrual cycle app that promotes inclusivity , embracing individuals from all backgrounds who wish to monitor their health, hygiene, and overall well-being.
 
-          </p>
-          <a href="./ours.html">
-            <button> Read Case Study</button>
-          </a>
-          
-        </div>
-       
-        <img src="./images/Ours.png" alt="">
-      </div>
-      
-      <div class="home-display-cards">
-        <div>
-          <h3>
-          Haydn
-          </h3>
-          <p>
-            The AI-based tool that helps you communicate your ideas more effectively than ever before.
-          </p>
-          <a href="./haydn.html">
-            <button> Read Case Study</button>
-          </a>
-        </div>
-        
-        <img src="./images/haydenProjectView.png" alt="">
-      </div>
-
-      <div class="home-display-cards">
-        <h3>
-          First Light
-        </h3>
-        <p>
+    <div class="flex-row home-card" >
+      <div class="flex-column home-card-text">
+        <h4 class="card-title text-left">Haydn</h4>
+        <p class="card-text text-left">
           The AI-based tool that helps you communicate your ideas more effectively than ever before.
         </p>
-        <button> Coming Soon</button>
-        <img src="./images/firstLight.png" alt="">
+        <a href="./haydn.html">
+          <button class="home-button"> Read Case Study</button>
+        </a>
+      </div>
+            
+      <div class="card-image center" id="haydn-home">
+        <img src="./images/hayden.png" />
       </div>
     </div>
-    
 
-  </header>
-
-  
-  <div id="footer" className="border">
-    <h4> Let's Connect</h4>
-    <div >
-       <a>LinkedIn</a>
-      <a>Email</a>
-      <a>Resume</a> 
+    <div class="flex-row home-card" id="home-bottom-column">
+      <div class="flex-column home-card-text">
+        <h4 class="card-title text-left">First Light</h4>
+        <p class="card-text text-left">
+          The AI-based tool that helps you communicate your ideas more effectively than ever before.
+        </p>
+        <a href="./about.html">
+           <button class="home-button"> Coming Soon</button>
+        </a>
+       
+      </div>
+          
+      <div class="card-image center" id="first-light-home">
+        <img src="./images/firstLight.png" />
+      </div>
     </div>
-</div>
+  </div>
+  
+    <div class="flex-column footer">
+      <h4> Let's Connect</h4>
+      <div class="flex-row">
+        <a href="https://www.linkedin.com/in/ara-fritz/">LinkedIn</a>
+        <a href="mailto:araolivia25@gmail.com">Email</a>
+        <a href="./images/Resume.pdf">Resume</a> 
+      </div>
+    </div>
+  </div>
+
+
   <script src="lib/jquery-3.7.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script src="lib/js/bootstrap.min.js"></script>
   <script src="lib/popper.min.js"></script>
   <script src="js/app.js"></script>

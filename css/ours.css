@@ -1,0 +1,29 @@
+.case-study-people{
+    width: 25%;
+}
+#ours-g1-s1-mt{
+    width: 100% !important;
+    justify-content: space-evenly;
+
+}
+#ours-g1-s1-mt:nth-child(1){
+    width: 65% !important;
+    width: 49.75rem;
+    flex-shrink: 0;
+}
+#ours-g1-s1-mt-list{
+    width: 30% !important;
+    background-color: blueviolet;
+}
+#ours-g1-s1-mt-list p{
+    width: 100% !important;
+}
+.circle{
+    text-align: center;
+    margin: 0 0 4vh 0;
+}
+
+
+ .text-centered{
+    text-align: center;
+ }
