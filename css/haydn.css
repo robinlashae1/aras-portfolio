@@ -1,0 +1,98 @@
+#haydn-g1-mt-list{
+    width: 100% !important;
+    justify-content: space-evenly;
+}
+p{
+    font-size: 1.5em !important;
+    font-weight: 400;
+}#haydn-collage{
+    margin: 4vh 0 ;
+}
+#haydn-6-text p{
+text-align: left;
+}
+#haydn-devices{
+width: 85vw;
+}
+#text-image-space{
+    width: 90vw;
+    margin: 5vh 0;
+}
+.project-image {
+    min-width: 30vw !important;
+    /* height: 20vh !important; */
+    /* min-width: fit-content !important; */
+    width: 65vw !important;
+    fill: none !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    
+}
+.case-study-text{
+    margin-left: 10vw;
+}
+.project-image img{
+    /* height: 50vh !important; */
+    padding: 3vh 0;
+    background: none;
+    object-fit: contain;
+    width: auto;
+}
+#haydn-cs-background{
+    background-image: url('../images/Haydn-eclipse.png'); 
+    /* box-shadow: 0 0 60px 50px #F1C44B; */
+    background-color: none !important;
+    /* height: 90%; */
+ }
+#text-image-space p{
+    width: 45vw;
+    margin-right: 2vw;
+}
+b{
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 3vh 0 3vh 0;
+    text-align: left;
+}
+#dun-dun{
+    width: 20%;
+    height: 13vh;
+    margin: 0 0 0 -40vw;
+}
+ p, li, ul{
+    font-size: 1.5em !important;
+    font-weight: 300;
+    text-align: left;
+}
+.circle-p{
+    text-align: center;
+    margin-left: 5vw;
+}
+#haydn-g1-mt-list{
+    width: 30% !important;
+}
+#haydn-g1-mt-list b{
+text-align: center;
+}
+#haydn-g1-mt-list p{
+    width: 100% !important;
+    text-align: center;
+}
+#haydn-g1-s1{
+
+}
+#haydn-g1-s1 p{
+    width: 60%;
+    margin: 0 0 2vh 1vw;
+}
+#haydn-g1-s1{
+    width: 85vw;
+    justify-content: space-between;
+}
+#haydn-g1-s1t:nth-child(1){
+    width: 65% !important;
+    width: 49.75rem;
+    flex-shrink: 0;
+}

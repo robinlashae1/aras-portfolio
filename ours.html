@@ -7,32 +7,50 @@
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ours.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="navbar">
+    <div id="navbar" class="content">
         <a href="./index.html">
           <img src="images/A.png" alt="thick black rounded A" id="logo" class="nav-elements img-fluid">
         </a>
-         <svg id="menuButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list nav-elements" viewBox="0 0 16 16" >
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg> 
+        <div class="content">  
+          <button class="md-trigger" data-modal="modal-12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+              <path d="M5.875 11.75H41.125M5.875 23.5H41.125M5.875 35.25H41.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>     
+          </button>
+        </div>
+        </div>
+         
         
-        <div id="nav-modal" class="modal collapse">
-              <div class="modal-body">
-                <a>
-                  <h1>Projects</h1>
-                </a>
-                <a>
-                  <h1>About Me</h1>
-                </a>
-                <a>
-                  <h1>
-                    Connect
-                  </h1>
-                </a>
-              </div>
-        </div><!-- /.modal -->
+        <div class="md-modal md-effect-12"> <!-- //modal -->
+          <div class="md-content"> <!-- //modal-content -->
+                    <button class="md-close">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+                        <path d="M13.2344 33.7675L23.5019 23.5L33.7695 33.7675M33.7695 13.2324L23.5 23.5L13.2344 13.2324" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="flex-row center modal-content"> <!-- modal content-->
+                        <div class="flex-column center modal-list"> <!-- //modal list -->
+                          <a href="./index.html#project-section" class="navigation">
+                          <h1>Projects</h1>  
+                        </a>
+                        <a href="./about.html" class="navigation">
+                          <h1>About Me</h1>  
+                        </a>
+                        <a href="./index.html#footer" class="navigation"> 
+                          <h1>Connect</h1>  
+                        </a>
+                        </div>
+                      <div class="resumeIcon"> <!-- resume -->
+                        <a href="./images/Resume.pdf">
+                          <img src="./images/resumeIc.svg" />
+                        </a>
+                </div>
+              </div>   
+        </div>
       </div>
 
       <section class="case-study-main flex-row center">
@@ -45,7 +63,7 @@
                 An inclusive menstrual cycle app that welcomes all people who need to keep track of their health, hygiene and overall wellness.
             </h4>
             </div>
-            <div class="case-study-image">
+            <div class="case-study-image project-image" id="ours-cs-background">
              <img class="img-fluid" src="./images/Ours.png"/>   
             </div>
             
@@ -55,10 +73,10 @@
                 <div class="case-study-section flex-column center" id="ours-g1-s1">
                     <div class="flex-row space-between nowrap cs-section-header">
                       <h3> Project Overview</h3>
+                      
                     <h3>1</h3>  
                     </div>
 
-                    <div class="flex-column nowrap" >
                         <div class="flex-row space-between" id="ours-g1-s1-mt">
                             <p class="text-left">
                                 As a nonbinary individual with a menstrual cycle, I face challenges in relating to conversations about menstruation. Many “feminine” care products are designed exclusively for women, excluding a significant portion of people who also need these products. Similarly, existing cycle tracking apps predominantly cater to women, using language and features that inadvertently exclude a large demographic of their users. This realization sparked my idea of creating an inclusive menstrual cycle app.  By prioritizing gender-inclusive language and terminology, Ours will provide a welcoming space for users to track their menstrual health and hygiene, irrespective of gender identity, sexual orientation, or health condition.
@@ -74,10 +92,9 @@
                                 <b>Platforms</b>
                                 <p>Mobile</p>
                             </div> 
-                    </div>
-                </div>
+                        </div>
                     
-                    <b> Design Process</b>
+                    <b class="cs-stand-alone"> Design Process</b>
                     <div class="flex-row center circle-group">
                         <div >
                             <div class="circle center-text center flex-column" >
@@ -130,14 +147,14 @@
                 <div class="case-study-section flex-column center">
                     <div class="flex-row space-between nowrap cs-section-header">
                         <h3>The Problem</h3>
-                        <img src="" alt="" class="img-fluid"/>
+                        <img src="./images/dun-dun.png" alt="hand writen words displaying the phrase dun-dun in parenthesis" id="dun-dun"/>
                         <h3>2</h3>    
                     </div>
-                    <div class="flex-column text-left ">
+                    <div class="flex-column text-left cs-text-space">
                        <p class="text-left">
                         One major concern regarding my research is the scarcity of similar existing apps in the market. Therefore, during user interviews, I made a deliberate effort to articulate the app's intentions, considering that many users are accustomed to using less inclusive apps . My goal was to encourage users to surpass their existing familiarity with other apps and explore their true wants/needs in-depth.  
                     </p>
-                    <b class="text-left"> I had three main goals while conducting this research. </b>
+                    <b class="text-left"> I had three main goals while conducting this research.</b>
                     <p class="text-left">
                         1. Gain insights into what is and what's not working on existing menstrual cycle apps
                         </p>
@@ -157,11 +174,11 @@
                         <h3>Competetive Analysis</h3>
                         <h3>3</h3>    
                     </div>
-                    <p class="text-left">
+                    <div class="cs-text-space">
+                       <p class="text-left">
                         I began my research by doing a quick competitive analysis.  I examined three of the most popular cycle tracking apps in the market: Flo, Clue, and My Calendar.
                     </p>
-                    <div>
-                    <b class="text-left">The research focused on these 3 things: </b>
+                    <p class="text-left bold-research">The research focused on these 3 things:</p>
                     <div class="flex-column">
                        <p class="text-left">
                         1. The company’s branding choices 
@@ -175,24 +192,21 @@
                     </div>
                     <img src="./images/ours-cs-1.png" alt="" class="img-fluid cs-image"/>
                     <div class="text-left">
-                    <b class="text-left">
+                    <p class="text-left bold-research">
                         Here are the key insights from this research:
-                    </b>
-                    <p class="text-left">
-                        Each competitor has an intuitive calendar interface, allowing users to track the start and end dates of their periods
-                     </p> 
-                     <p class="text-left">
-                       Each competitor allows users to personalize their profiles with PMS symptoms, which in turn refines the accuracy of future predictions
-                     </p> 
-                    </div>
-                    <p class="text-left">
-                        I conducted further research to gain a comprehensive understanding of the existing landscape and identify areas that require improvement in these apps. This knowledge was important for me to incorporate effective solutions into my own designs, addressing both their strengths and weaknesses.
                     </p>
+                    <ul>
+                        <li class="text-left" >Each competitor has an intuitive calendar interface, allowing users to track the start and end dates of their periods</li>
+                        <li class="text-left">Each competitor allows users to personalize their profiles with PMS symptoms, which in turn refines the accuracy of future predictions</li>
+                        <li class="text-left">I conducted further research to gain a comprehensive understanding of the existing landscape and identify areas that require improvement in these apps. This knowledge was important for me to incorporate effective solutions into my own designs, addressing both their strengths and weaknesses.
+                    </li>
+                    </ul>
                     <img src="./images/ours-cs-2.png" alt="" class="img-fluid cs-image"/>
                     <p class="text-left">
                         Let's address a prominent issue—the outdated assumptions about femininity and feminine care products in existing apps. Many menstrual health apps rely on clichéd designs with soft, pink, and floral aesthetics. This problem goes beyond the apps and extends to the entire menstrual healthcare product realm. These products fail to cater to a diverse user base, neglecting factors like sexual health tracking, PCOS symptom monitoring, and many more factors that may be important to people who use these apps. Moreover, the absence of gender-inclusive language makes it challenging for trans and nonbinary individuals to find a safe space to track their menstrual health and wellbeing. These apps lack inclusivity and personalization, failing users in fundamental ways.
                     </p>
-                </div>
+                </div> 
+                    </div>
                 </div>
 
                 <div class="case-study-section flex-column center">
@@ -201,16 +215,16 @@
                      <h3>4</h3> 
                     </div>
                         <p class="text-left">My initial research aligned with the survey results I obtained. The survey gathered 12 responses from a diverse range of individuals representing various identities. </p>
-                        <div class="flex-row">
+                        <div class="flex-row" id="ours-survey-numbers">
                             <div class="flex-column center">
-                                <div class="circle">
-                                    <p>2</p>
+                                <div class="circle ">
+                                    <h1>2</h1>
                                 </div>
                                 <p>On a scale of 1 to 5, how would you rate the overall functionality of current period tracking apps?</p>
                             </div>
                             <div class="flex-column center">
                                 <div class="circle">
-                                    <p>2.5</p>
+                                    <h1>2.5</h1>
                                 </div>
                                 <p>On a scale of 1 to 5, How would you rate the overall inclusivity of current cycle tracking apps?</p>
                             </div>
@@ -230,36 +244,41 @@
                     </p>
                     <div class="flex-row space-between">
                         <div class="case-study-people">
-                            <img src="./images/ours-cs-p-1.png" alt="" class="img-fluid case-study-people"/>
-                            <p>Robin</p>
-                            <p>(She/They)</p>
+                            <img src="./images/ours-cs-p-1.png" alt="" class="img-fluid "/>
+                            <div >
+                             <h5>Robin</h5>
+                            <p>(She/They)</p>   
+                            </div>
+                            
                             <p>“I would love to see something where I could personalize the app. I have PCOS so certain things don't work for me and if I have the chance to customize that I would want to use apps like Flo more”</p>
                         </div>
 
                         <div class="case-study-people">
-                            <img src="./images/ours-cs-p-2.png" alt="" class="img-fluid case-study-people"/>
-                            <p>Jess</p>
-                            <p>(They/She)</p>
+                            <img src="./images/ours-cs-p-2.png" alt="" class="img-fluid "/>
+                            <div>
+                              <h5>Jess</h5>
+                            <p>(They/She)</p>  
+                            </div>
+                            
                             <p>“The only tools I have available to me are very pink and floral, and while there is nothing wrong with that, it feels weird to use. This is my health… I'm not trying to be cute”</p>
                         </div>
                         <div class="case-study-people">
-                            <img src="./images/ours-cs-p-3.png" alt="" class="img-fluid case-study-people"/>
-                            <p>Hope</p>
-                            <p>(She/her)</p>
+                            <img src="./images/ours-cs-p-3.png" alt="" class="img-fluid "/>
+                            <div>
+                               <h5>Hope</h5>
+                            <p>(She/her)</p> 
+                            </div>
+                            
                             <p>“The predictions are never accurate. I would rather just be able to keep track of it myself instead of it being predicted. It can be helpful sometimes but it's easier to keep track of it manually”</p>
                         </div>
                     </div>
                     <b class="text-left">From these interviews, several key insights emerged: </b>
                     <div>
-                       <p class="text-left">
-                        Users expressed a strong desire for greater flexibility in inputting their personal information. They found that many apps make assumptions and generalizations about their needs, which in turn has a negative impact on their overall experience. 
-                        </p>
-                        <p class="text-left">
-                        Users emphasized the importance of being able to customize various features of a menstrual cycle app to align with their individual preferences.                        
-                        </p>
-                        <p class="text-left">
-                        Furthermore, they expressed the need for the ability to decline or disable features that do not cater to their specific requirements.
-                        </p> 
+                        <ul>
+                            <li>Users expressed a strong desire for greater flexibility in inputting their personal information. They found that many apps make assumptions and generalizations about their needs, which in turn has a negative impact on their overall experience. </li>
+                            <li>Users emphasized the importance of being able to customize various features of a menstrual cycle app to align with their individual preferences. </li>
+                            <li>Furthermore, they expressed the need for the ability to decline or disable features that do not cater to their specific requirements.</li>
+                        </ul>
                     </div>
                     
                 </div>
@@ -269,12 +288,15 @@
                       <h3>The Problem Statement</h3>
                       <h3>6</h3>
                     </div>
-                    <p class="text-left">
+                    <div>
+                       <p class="text-left">
                         After completing my research, I developed a problem statement that encompasses the overall goal for my mobile app. 
                     </p>
-                    <b class="text-left">
-                        People with periods need a digital tool to help them keep track of their menstrual health & hygiene in order to enforce better overall health habits and mental wellness.
-                    </b>
+                    <b class="text-left" id="ours-problem">
+                    People with periods need a digital tool to help them keep track of their menstrual health & hygiene in order to enforce better overall health habits and mental wellness.
+                    </b> 
+                    </div>
+                    
                 </div>
 
                 <div class="case-study-section flex-column center">
@@ -283,7 +305,7 @@
                         <h3>7</h3>
                     </div>
                     <p class="text-left">After reviewing the interview findings, the ideation process commenced to determine the essential features for the final app designs. The core functionality will be centered around a period calendar. Users will have the ability to add custom symptoms to their profiles and customize the app by enabling or disabling specific features to match their preferences. For example, users can choose to activate or deactivate the ovulation tracking log as needed. To enhance personalization further, diverse customization options like different color palettes will be provided. The app will also include a dedicated journaling section for users to freely document their daily experiences and observations. </p>
-                    <img src="./images/ours-cs-4.png" alt="" class="img-fluid cs-image"/>
+                    <img src="./images/ours-cs-4.png" alt="" class="img-fluid cs-image" id="must-haves-photo"/>
                     <p class="text-left"> Another potential feature is the ability to connect with friends and family within the app, allowing for shared calendar syncing—particularly helpful for users living together with synchronized cycles. Additionally, a blog section will offer tailored articles on various topics of interest, providing relevant resources to meet the diverse needs of users. For instance, a nonbinary user seeking trans-friendly healthcare providers may find a helpful guide in their profile. Lastly, the app will provide resources to local community and health centers, emphasizing the importance of support networks and ensuring users feel connected and supported throughout their menstrual experiences.</p>
                 </div>
 
@@ -295,7 +317,7 @@
                     <p class="text-left">
                         I drafted an initial outline of the possible dashboard design, incorporating the concepts identified during feature prioritization. Building upon these ideas, I then crafted a mid-fidelity prototype. The prototype primarily emphasizes the process of users adding symptoms to their period log and saving them to their profile. Within the prototype, users can choose symptoms from a predefined list and include any additional symptoms they desire to track. 
                     </p>
-                    <img src="./images/ours-cs-5.png" alt="" class="img-fluid cs-image"/>
+                    <img src="./images/ours-cs-5.png" alt="" class="img-fluid cs-image" id="ours-8-photo"/>
                 </div>
 
                 <div class="case-study-section flex-column nowrap center">
@@ -303,37 +325,32 @@
                         <h3>Next Steps</h3>
                         <h3>9</h3>
                     </div>
-                    <p class="text-left">My next steps in this project are to begin user testing on my Mid-Fi prototype. </p>
+                    <div>
+                    <p class="text-left"> My next steps in this project are to begin user testing on my Mid-Fi prototype. </p>
                     <div class="text-left">
                       <b class="text-left">
                        The primary question I aim to address is to assess the functionality of the screens. I want to know: 
-                        </b>
-                        <p class="text-left">
-                            1. User perception of the layout: What are users' impressions of the overall layout and organization of the interface?
-                        </p>
-                        <p class="text-left">
-                            2. User preferences for symptom presentation: How would users prefer symptoms to be displayed or structured?                   
-                        </p>
-                        <p class="text-left">
-                          3. Identification of any confusion or frustrations related to the current flow: Are users encountering any difficulties or experiencing frustrations while navigating through the current process?
-                        </p>
-                        <p class="text-left">
-                            4. Redesign possibilities for a smoother navigation experience: How can the flow be redesigned to enhance user navigation and minimize any existing obstacles or challenges? 
-                        </p>  
+                    </b>
+                        <ol id="ours-ol">
+                            <li>User perception of the layout: What are users' impressions of the overall layout and organization of the interface?</li>
+                            <li>User preferences for symptom presentation: How would users prefer symptoms to be displayed or structured?</li>
+                            <li>Identification of any confusion or frustrations related to the current flow: Are users encountering any difficulties or experiencing frustrations while navigating through the current process?</li>
+                            <li>Redesign possibilities for a smoother navigation experience: How can the flow be redesigned to enhance user navigation and minimize any existing obstacles or challenges? </li>
+                        </ol> 
                     </div>
                     <p class="text-left">By gathering feedback on these points, I aim to refine the user’s experience and optimize the design to better align with the user's needs. Based on the feedback received, I will refine the product accordingly. Finally, I will focus on building the final UI elements to create a complete and user-friendly mobile product for everyone to enjoy!</p>
                 </div>
             </section>
     </div>
 
-    <div id="footer" className="border">
+    <div class="flex-column footer" id="footer">
         <h4> Let's Connect</h4>
-        <div >
-           <a>LinkedIn</a>
-          <a>Email</a>
-          <a>Resume</a> 
+        <div class="flex-row">
+          <a href="https://www.linkedin.com/in/ara-fritz/">LinkedIn</a>
+          <a href="mailto:araolivia25@gmail.com">Email</a>
+          <a href="./images/Resume.pdf">Resume</a> 
         </div>
-    </div>
+      </div>
 
     <script src="lib/jquery-3.7.0.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>

@@ -1,12 +1,15 @@
-const menu = document.getElementById("menuButton");
-const button = document.getElementById("home-spotlight")
-
-button.onclick()
-
-$(function(){
-    $("#menuButton").on("click", function() {
-        $("#nav-modal").show();
-      })
-  });
+$(function () {
   
-  ;
+    $('.md-trigger').on('click', function() {
+      $('.md-modal').addClass('md-show');
+    });
+    
+    $('.md-close').on('click', function() {
+      $('.md-modal').removeClass('md-show');
+    });
+    
+    $('.navigation').on('click', function() {
+        $('.md-modal').removeClass('md-show');
+      });
+    
+  });

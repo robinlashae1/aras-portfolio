@@ -1,6 +1,45 @@
 .case-study-people{
-    width: 25%;
+    width: 30%;
+    
+    margin: 5vh 0;
 }
+.case-study-people div{
+    margin-top: 3vh;
+    text-align: center;
+
+}
+.case-study-people div h5{
+    font-size: 1.8em;
+    font-weight: 400;
+
+}
+#ours-cs-background{
+    background-image: url('../images/ours-eclipse.png'); 
+    /* box-shadow: 0 0 60px 50px #F1C44B; */
+    background-color: none !important;
+    /* height: 90%; */
+}
+.case-study-people div p{
+    font-size: 1.2em !important;
+    font-weight: 400;
+    text-align: center !important;
+
+}
+#ours-8-photo{
+    margin-top: -15vh;
+    width: 100vw !important;
+}
+#must-haves-photo{
+    height: 90vh;
+}
+.case-study-people p{
+    text-align: left;
+}
+.case-study-people img{
+    width: 80%;
+    min-height: 50vh;
+}
+
 #ours-g1-s1-mt{
     width: 100% !important;
     justify-content: space-evenly;
@@ -11,12 +50,17 @@
     width: 49.75rem;
     flex-shrink: 0;
 }
+#dun-dun{
+    width: 20%;
+    height: 13vh;
+    margin: 0 0 0 -40vw;
+}
 #ours-g1-s1-mt-list{
     width: 30% !important;
-    background-color: blueviolet;
 }
 #ours-g1-s1-mt-list p{
     width: 100% !important;
+    text-align: center;
 }
 .circle{
     text-align: center;
@@ -27,3 +71,54 @@
  .text-centered{
     text-align: center;
  }
+ p, li, ul{
+    font-size: 1.5em !important;
+    font-weight: 300;
+    text-align: left;
+}
+#ours-ol{
+    margin: 2vh 0 5vh 0;
+}
+.cs-stand-alone{
+    margin: 6vh 0;
+}
+#ours-g1-s1-mt p{
+    width: 60%;
+    margin: 0 0 2vh 1vw;
+}
+#ours-survey-numbers{
+    margin: 5vh 0;
+}
+#ours-problem{
+    text-align: left;
+}
+.circle h1{
+    font-size: 12em;
+    font-weight: 600;
+    margin-top: 6vh;
+}
+p{
+    font-size: 1.5em !important;
+    font-weight: 400;
+}
+#ours-g1-s1-mt{
+    width: 85vw;
+    justify-content: space-between;
+}
+b{
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 3vh 0 3vh 0;
+    text-align: left;
+}
+.bold-research{
+    margin: 4vh 0 2vh 0 !important;
+    text-decoration: underline;
+    font-weight: 600;
+}
+li{
+
+}
+.cs-text-space{
+    margin-left: 1vw;
+}

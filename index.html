@@ -11,29 +11,46 @@
 </head>
 
 <body >
-  <div id="navbar">
+  <div id="navbar" class="content">
     <a href="./index.html">
       <img src="images/A.png" alt="thick black rounded A" id="logo" class="nav-elements img-fluid">
     </a>
-     <svg id="menuButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list nav-elements" viewBox="0 0 16 16" >
-      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-    </svg> 
+    <div class="content">  
+      <button class="md-trigger" data-modal="modal-12">
+        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+          <path d="M5.875 11.75H41.125M5.875 23.5H41.125M5.875 35.25H41.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>     
+      </button>
+    </div>
+    </div>
+     
     
-    <div id="nav-modal" class="modal collapse">
-          <div class="modal-body">
-            <a>
-              <h1>Projects</h1>
-            </a>
-            <a>
-              <h1>About Me</h1>
-            </a>
-            <a>
-              <h1>
-                Connect
-              </h1>
-            </a>
-          </div>
-    </div><!-- /.modal -->
+    <div class="md-modal md-effect-12"> <!-- //modal -->
+      <div class="md-content"> <!-- //modal-content -->
+                <button class="md-close">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+                    <path d="M13.2344 33.7675L23.5019 23.5L33.7695 33.7675M33.7695 13.2324L23.5 23.5L13.2344 13.2324" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div class="flex-row center modal-content"> <!-- modal content-->
+                  <div class="flex-column center modal-list"> <!-- //modal list -->
+                    <a href="./index.html#project-section" class="navigation">
+                    <h1>Projects</h1>  
+                  </a>
+                  <a href="./about.html" class="navigation">
+                    <h1>About Me</h1>  
+                  </a>
+                  <a href="./index.html#footer" class="navigation"> 
+                    <h1>Connect</h1>  
+                  </a>
+                  </div>
+                <div class="resumeIcon"> <!-- resume -->
+                  <a href="./images/Resume.pdf">
+                    <img src="./images/resumeIc.svg" />
+                  </a>
+            </div>
+          </div>   
+    </div>
   </div>
 
   <div id="home-page" class="flex-column center" >
@@ -59,7 +76,7 @@
 
   <div class="flex-column center" id="home-project-column">
 
-    <div class="flex-row home-card home-bottom-column" >
+    <div class="flex-row home-card home-bottom-column" id="project-section">
       <div class="flex-column home-card-text">
         <h4 class="card-title text-left">Ours</h4>
         <p class="card-text text-left">
@@ -97,7 +114,7 @@
         <p class="card-text text-left">
           The AI-based tool that helps you communicate your ideas more effectively than ever before.
         </p>
-        <a href="./about.html">
+        <a >
            <button class="home-button"> Coming Soon</button>
         </a>
        
@@ -109,7 +126,7 @@
     </div>
   </div>
   
-    <div class="flex-column footer">
+  <div class="flex-column footer" id="footer">
       <h4> Let's Connect</h4>
       <div class="flex-row">
         <a href="https://www.linkedin.com/in/ara-fritz/">LinkedIn</a>
